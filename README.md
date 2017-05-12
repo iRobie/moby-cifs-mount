@@ -1,4 +1,4 @@
-A Simple Docker image to automate mounting a remote NFS share into the Docker host.
+A Simple Docker image to automate mounting a remote CIFS share into the Docker host.
 
 ### Usage
 
