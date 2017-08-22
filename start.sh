@@ -23,6 +23,7 @@ nsenter -t 1 -m -u -i -n sh -c " \
     apk update && \
     apk add inotify-tools && \
     mkdir -p $MOUNT && \
+    (umount $MOUNT || /bin/true) && \
     mount -t cifs $SERVER $MOUNT -o $OPTIONS && \
     inotifywait -m $MOUNT \
     "
